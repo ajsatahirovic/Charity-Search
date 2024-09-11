@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+header {
+    background-color: #fca311;
+    padding-top: 0.2rem;
+}
+
+header a, header p {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.607);
+}
+
+.signin {
+    display: flex;
+    justify-content: end;
+    padding-right: 1.5rem;
+    gap: 2rem;
+    font-size: large;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    background-color: white;
+    width: 100%;
+    z-index: 9999;
+    transition: 0.6s;
+}
+
+.nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
+.nav img {
+    padding-left: 1rem;
+    height: 5rem;
+}
+
+.nav .links {
+    padding: 1.5rem;
+    padding-top: 1.7rem;
+    margin-left: 25rem;
+}
+
+.nav .links a {
+    padding: 3rem;
+}
+
+.nav #charity {
+    font-size: 2rem;
+    font-weight: 200;
+    padding-top: 2rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav a:hover {
+    color: #fca311;
+    text-decoration: none;
+}
+
+#donate {
+    background-color: rgba(255, 191, 0, 0.591);
+    border-radius: 0.5rem;
+    color: aliceblue;
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+#donate:hover {
+    background-color: rgb(255, 191, 0);
+    color: aliceblue;
+}
+
+/* Carousel */
+.carosel {
+    height: 30rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.carosel h3, .carosel h1 {
+    color: rgb(255, 191, 0);
+    text-transform: uppercase;
+}
+
+.carosel img {
+    height: 30rem;
+}
+
+/* Our Work Section */
+.ourwork {
+    margin: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+}
+
+.ourwork img {
+    height: 20rem;
+}
+
+#ourwork {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+#ourwork h1 b {
+    color: #fca311;
+}
+
+#ourwork h6 {
+    color: #14213d;
+}
+
+#ourwork .btn {
+    background-color: #14213d;
+    border: #14213d;
+    color: aliceblue;
+    width: 12rem;
+    margin-left: 11rem;
+}
+
+/* Onama Section */
+.onama {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 7rem;
+    gap: 6rem;
+}
+
+.onama img {
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.onama #icons h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #14213d;
+}
+
+.onama #icons h5 {
+    text-align: center;
+}
+
+/* Footer */
+.footer1 {
+    background-color: #14213d;
+    color: aliceblue;
+    padding: 2rem;
+}
+
+.footer1 h1 {
+    font-family: 'Gothic Medium', 'Arial Narrow', sans-serif;
+    padding-top: 2rem;
+}
+
+.footer1 img {
+    height: 15rem;
+}
+
+#kraj {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+#ig img {
+    height: 1.5rem;
+}
+
+#ig {
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+/* Login Section */
+.login {
+    margin: 5rem;
+    padding-left: 8rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: #14213d;
+    width: 20rem;
+    text-align: start;
+    border-color: #090d17;
+}
+
+.login h5 {
+    color: rgba(255, 255, 255, 0.518);
+}
+
+/* Contact Section */
+#contact {
+    font-family: 'Gothic Medium', 'Arial Narrow', sans-serif;
+    width: 50rem;
+    background-color: #14213d;
+    color: white;
+    border-radius: 6px;
+    padding: 2rem;
+    height: 30rem;
+    text-align: center;
+}
+
+#contact p {
+    width: 30rem;
+}
+
+#contact p a {
+    color: #fca311;
+}
+
+/* Responsivnost */
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav .icon:hover + .links, .nav .icon:focus + .links {
+        display: flex;
+    }
+
+    .carosel {
+        height: auto;
+        width: 100%;
+    }
+
+    .carosel img {
+        height: auto;
+        width: 100%;
+    }
+
+    .ourwork {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ourwork img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #ourwork h1, #ourwork h6, #ourwork p {
+        text-align: center;
+    }
+
+    #ourwork .btn {
+        margin: 0 auto;
+    }
+
+    .onama {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .onama #icons {
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #kraj {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login {
+        padding-left: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .login input {
+        width: 90%;
+    }
+}

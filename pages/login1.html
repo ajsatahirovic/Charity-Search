@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CHARITY SEARCH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../slike/LOGO-PROJEKAT VB.png" type="image/png">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../script/main.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <div class="signin">
+            <a href="../pages/contact1.html">Kontakt</a>
+            <a href="../pages/login1.html">Prijavi se</a>
+            <div id="links">
+                <a id="eng" href="../pages/login.html">eng</a>
+                <p>/</p>
+                <a id="srp" href="../pages/login1.html">srp</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="nav" id="navbar">
+        <div class="lgcs">
+            <img src="../slike/LOGO-PROJEKAT VB.png" alt="Logo">
+            <a id="charity" href="../index1.html">Charity Search</a>
+        </div>
+        <div class="links mr-3">
+            <a href="../index1.html">Početna</a>
+            <a href="../pages/learnmore1.html">Saznaj više</a>
+            <a id="donate" href="../pages/donate1.html">Doniraj</a>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+        <!-- Login Form -->
+        <div class="login-container">
+          <div class="login-form">
+              <h2>Dobrodošli Nazad</h2>
+              <p>Molimo vas da se prijavite na svoj nalog</p>
+              <form id="loginForm">
+                  <div class="form-group">
+                      <label for="username">Korisničko ime</label>
+                      <input type="text" id="username" name="username" placeholder="Unesite korisničko ime" class="username">
+                      <span class="error-message" id="usernameError"></span>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Lozinka</label>
+                      <input type="password" id="password" name="password" placeholder="Unesite lozinku" class="password">
+                      <span class="error-message" id="passwordError"></span>
+                  </div>
+                  <div>
+                      <input type="checkbox" id="rememberMe" name="rememberMe" class="password">
+                      <label for="rememberMe">Zapamti me</label>
+                  </div>
+                  <button type="submit" onclick="proveraPodataka()">
+                      Prijavite se
+                  </button>
+              </form>
+              <div class="login-footer">
+                  <!-- <p>Zaboravili ste lozinku? <a href="#">Kliknite ovde</a></p> -->
+                  <!-- <p>Nemate nalog? <a href="#">Registrujte se</a></p> -->
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer mt-5">
+      <p>2024. © Charity-Search | All rights reserved</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
