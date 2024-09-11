@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+header {
+    background-color: #fca311;
+    padding-top: 0.2rem;
+}
+
+header a, header p {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.607);
+}
+
+.signin {
+    display: flex;
+    justify-content: end;
+    padding-right: 1.5rem;
+    gap: 2rem;
+    font-size: large;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    background-color: white;
+    width: 100%;
+    z-index: 9999;
+    transition: 0.6s;
+}
+
+.nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
+.nav img {
+    padding-left: 1rem;
+    height: 5rem;
+}
+
+.nav .links {
+    padding: 1.5rem;
+    padding-top: 1.7rem;
+    margin-left: 25rem;
+}
+
+.nav .links a {
+    padding: 3rem;
+}
+
+.nav #charity {
+    font-size: 2rem;
+    font-weight: 200;
+    padding-top: 2rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav a:hover {
+    color: #fca311;
+    text-decoration: none;
+}
+
+
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.image-container img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.text-container {
+    padding: 40px;
+    max-width: 600px;
+}
+
+.sub-heading {
+    font-size: 14px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+h1 .highlight {
+    color: #f39823; /* Narandžasta boja */
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5a5a5a;
+    margin-bottom: 30px;
+}
+
+.learn-more-btn {
+    background-color: #1e294e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #0d1b36;
+}
+
+/* Sekcija sa karticama */
+.tools-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 30px;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+.tool-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #f39823;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+}
+
+.more-info-btn {
+    background-color: #f39823;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-info-btn:hover {
+    background-color: #d87c1a;
+}
+
+/* Sekcija sa logotipima partnera */
+.partners-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.partners-section h2 {
+    font-size: 30px;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partner-logos img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+/* CTA Sekcija */
+.cta-section {
+    background-color: #1e294e;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.get-started-btn {
+    background-color: #f39823;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.get-started-btn:hover {
+    background-color: #d87c1a;
+}
+
+#donate {
+    background-color: rgba(255, 191, 0, 0.591);
+    border-radius: 0.5rem;
+    color: aliceblue;
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+#donate:hover {
+    background-color: rgb(255, 191, 0);
+    color: aliceblue;
+}

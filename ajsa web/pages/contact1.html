@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <title>CHARITY SEARCH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../slike/LOGO-PROJEKAT VB.png" type="image/png">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <div class="signin">
+            <a href="../pages/contact1.html">Kontakt</a>
+            <a href="../pages/login1.html">Prijavi se</a>
+            <div id="links">
+                <a id="eng" href="../pages/contact.html">eng</a>
+                <p>/</p>
+                <a id="srp" href="#">srp</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="nav" id="navbar">
+        <div class="lgcs">
+            <img src="../slike/LOGO-PROJEKAT VB.png" alt="Logo">
+            <a id="charity" href="../pages/index1.html">Charity Search</a>
+        </div>
+        <div class="links mr-3">
+            <a href="../pages/index1.html">Početna</a>
+            <a href="../pages/learnmore1.html">Saznaj Više</a>
+            <a id="donate" href="../pages/donate1.html">Doniraj</a>
+        </div>
+    </div>
+
+
+    <div class="footer1">
+      <div class="footer">
+          <div class="end">
+              <div id="kraj">
+                  <img src="../slike/LOGO-PROJEKAT VB.png" alt="Logo">
+                  <div>
+                      <h1>Charity <br> Search</h1>
+                  </div>
+              </div>
+          </div>
+
+          <div class="login">
+              <h5>Pošalji Poruku</h5>
+              <form id="contactForm">
+                  <div class="mb-3 name">
+                      <input type="text" id="fullName" placeholder="Unesi svoje puno ime" required>
+                      <div id="fullNameError" class="error"></div>
+                  </div>
+                  <div class="mb-3 name">
+                      <input type="email" id="email" placeholder="Unesi svoj email" required>
+                      <div id="emailError" class="error"></div>
+                  </div>
+                  <div class="mb-3 name">
+                    <input type="message" id="floatingPassword" placeholder="Unesi svoju poruku">
+                      <div id="messageError" class="error"></div>
+                  </div>
+                  <a href="thankyou1.html"><button type="button" class="btn btn-outline-light">Pošalji</button></a>
+                 <div id="formSuccess" class="success"></div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-5">              
+        <div>
+            <p>2024. © Charity-Search | Sva prava zadržana</p>
+            <div id="ig">
+                <img src="../slike/icons8-facebook-50.png" class="mr-2" alt="Facebook Ikona">
+                <img src="../slike/icons8-mail-50.png" class="mr-2" alt="Mail Ikona">
+                <img src="../slike/icons8-instagram-50.png" class="mr-2" alt="Instagram Ikona">
+            </div>
+        </div>    
+    </footer>
+
+    <script src="../script/contact.js"></script>
+  </body>
+</html>

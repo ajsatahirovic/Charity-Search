@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CHARITY SEARCH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../slike/LOGO-PROJEKAT VB.png" type="image/png">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <div class="signin">
+            <a href="../pages/contact.html">Contact</a>
+            <a href="../pages/login.html">Sign In</a>
+            <div id="links">
+                <a id="eng" href="#">eng</a>
+                <p>/</p>
+                <a id="srp" href="../pages/login1.html">srp</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav" id="navbar">
+        <div class="lgcs">
+            <img src="../slike/LOGO-PROJEKAT VB.png" alt="Logo">
+            <a id="charity" href="../pages/index.html">Charity Search</a>
+        </div>
+        <div class="links mr-3">
+            <a href="../pages/index.html">Home</a>
+            <a href="../pages/learnmore.html">Learn More</a>
+            <a id="donate" href="../pages/donate.html">Donate</a>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Welcome Back</h2>
+            <p>Please sign in to your account</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" class="username">
+                    <span class="error-message" id="usernameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" class="password">
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+                <div>
+                    <input type="checkbox" id="rememberMe" name="rememberMe" class="password">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <button type="submit" onclick="proveraPodataka()">
+                    Sign In
+                </button>
+            </form>
+            <div class="login-footer">
+                <!-- <p>Forgot your password? <a href="#">Click here</a></p> -->
+                <!-- <p>Don't have an account? <a href="#">Sign up</a></p> -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5">
+        <p>2024. © Charity-Search | All rights reserved</p>
+    </footer>
+
+    <script src="../script/podaci.js"></script>
+
+  </body>
+</html>
